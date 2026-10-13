@@ -1,50 +1,100 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اولین سایت من</title>
-  <style>
-    body {
-      font-family: Tahoma, sans-serif;
-      text-align: center;
-      direction: rtl;
-      background: #f0f4f8;
-      margin: 0;
-      color: #222;
-    }
-    header {
-      background: #1769ff;
-      color: white;
-      padding: 40px 15px;
-    }
-    main {
-      background: white;
-      max-width: 600px;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 12px;
-    }
-    a {
-      display: inline-block;
-      background: #1769ff;
-      color: white;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>سلام! به سایت من خوش آمدی</h1>
-    <p>این اولین وب‌سایت من است.</p>
+<div class="links">
+        <a href="#home">خانه</a>
+        <a href="#about">درباره من</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#contact">ارتباط</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <span class="tag">اولین پروژه من با GitHub Pages</span>
+
+      <h1>به دنیای من خوش آمدید</h1>
+
+      <p>
+        اینجا جایی برای معرفی من، نمایش پروژه‌ها
+        و به اشتراک گذاشتن چیزهایی است که یاد می‌گیرم.
+      </p>
+
+      <a class="button" href="#projects">مشاهده پروژه‌ها</a>
+      <a class="button button-outline" href="#about">بیشتر بدانید</a>
+    </div>
   </header>
 
   <main>
-    <h2>درباره سایت من</h2>
-    <p>این سایت را با GitHub ساختم.</p>
-    <a href="https://github.com/">ورود به GitHub</a>
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">درباره من</h2>
+        <p class="section-intro">کمی درباره این وب‌سایت</p>
+
+        <p class="about">
+          من در حال یادگیری طراحی وب هستم. این وب‌سایت را با
+          HTML و CSS ساخته‌ام و از GitHub Pages برای انتشار
+          رایگان آن استفاده می‌کنم. در آینده پروژه‌های بیشتری
+          به این صفحه اضافه خواهم کرد.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">پروژه‌های من</h2>
+        <p class="section-intro">
+          نمونه‌ای از کارهایی که می‌توانم در این بخش معرفی کنم
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🌐</div>
+            <h3>طراحی وب‌سایت</h3>
+            <p>
+              ساخت صفحات زیبا و واکنش‌گرا با HTML و CSS.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>یادگیری برنامه‌نویسی</h3>
+            <p>
+              تمرین کدنویسی و نگهداری پروژه‌ها در GitHub.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🚀</div>
+            <h3>پروژه‌های آینده</h3>
+            <p>
+              این بخش را با پروژه‌های واقعی خودم تکمیل می‌کنم.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">ارتباط با من</h2>
+        <p class="section-intro">
+          می‌توانی از طریق صفحه GitHub من را پیدا کنی.
+        </p>
+        <a
+          class="button"
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          مشاهده GitHub
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="container">
+      ساخته‌شده با علاقه ❤️
+    </div>
+  </footer>
 </body>
 </html>
