@@ -1,129 +1,75 @@
-.links {
-        justify-content: center;
-        gap: 12px;
-      }
+<header class="navbar">
+    <a href="#" class="logo">وب‌سایت من</a>
 
-      .hero {
-        padding: 65px 0;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 45px 0;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    <div class="container nav-inner">
-      <a class="logo" href="#home">وب‌سایت من</a>
-
-      <div class="links">
-        <a href="#home">خانه</a>
-        <a href="#about">درباره من</a>
-        <a href="#projects">پروژه‌ها</a>
-        <a href="#contact">ارتباط</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero" id="home">
-    <div class="container">
-      <span class="tag">خوش آمدید به وب‌سایت من</span>
-
-      <h1>ایده‌ها را به واقعیت تبدیل کنیم!</h1>
-
-      <p>
-        اینجا فضای من برای یادگیری، معرفی پروژه‌ها
-        و ساختن تجربه‌های تازه در دنیای فناوری است.
-      </p>
-
-      <a class="button" href="#projects">مشاهده پروژه‌ها</a>
-      <a class="button button-outline" href="#about">درباره من</a>
-    </div>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#services">خدمات</a>
+      <a href="#download">دانلود</a>
+      <a href="#contact">تماس</a>
+    </nav>
   </header>
 
   <main>
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">درباره من</h2>
-        <p class="section-intro">به فضای شخصی من خوش آمدید</p>
-
-        <p class="about">
-          من در حال یادگیری طراحی وب و برنامه‌نویسی هستم.
-          این سایت را با HTML و CSS ساخته‌ام و از GitHub
-          Pages برای انتشار آن استفاده می‌کنم. هدفم این است
-          که با تمرین، پروژه‌های بهتر و کاربردی‌تری بسازم.
-        </p>
-      </div>
+    <section class="hero" id="home">
+      <h1>به <span>وب‌سایت من</span> خوش آمدید</h1>
+      <p>
+        فایل‌ها، برنامه‌ها و مطالب موردنیازتان را
+        از اینجا پیدا کنید.
+      </p>
+      <a href="#download" class="btn">مشاهده بخش دانلود</a>
     </section>
 
-    <section id="projects">
+    <section class="section" id="services">
       <div class="container">
-        <h2 class="section-title">پروژه‌های من</h2>
-        <p class="section-intro">
-          گوشه‌ای از مسیر یادگیری و کارهای من
+        <h2 class="section-title">بخش <span>خدمات</span></h2>
+        <p class="section-description">
+          مطالب و امکانات سایت
         </p>
 
         <div class="cards">
           <article class="card">
-            <div class="card-icon">🌐</div>
-            <h3>طراحی وب‌سایت</h3>
-            <p>
-              ساخت صفحات جذاب، مرتب و سازگار با موبایل
-              و کامپیوتر با HTML و CSS.
-            </p>
+            <h3>برنامه‌ها</h3>
+            <p>معرفی و دریافت برنامه‌های کاربردی.</p>
           </article>
 
           <article class="card">
-            <div class="card-icon">💻</div>
-            <h3>برنامه‌نویسی</h3>
-            <p>
-              یادگیری کدنویسی و مدیریت پروژه‌ها
-              با ابزارهای توسعه.
-            </p>
+            <h3>فایل‌ها</h3>
+            <p>دسترسی آسان به فایل‌های منتشرشده.</p>
           </article>
 
           <article class="card">
-            <div class="card-icon">🚀</div>
-            <h3>ایده‌های آینده</h3>
-            <p>
-              افزودن پروژه‌های واقعی و امکانات تازه
-              به این وب‌سایت در آینده.
-            </p>
+            <h3>آموزش‌ها</h3>
+            <p>مطالب و راهنماهای کاربردی.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <section class="download-section" id="download">
+      <div class="download-box">
+        <h2>دانلود برنامه اندروید</h2>
+        <p>برای دریافت فایل APK روی دکمه زیر بزنید.</p>
+
+        <!-- بعد از آپلود فایل، نام آن را در این لینک وارد کنید -->
+        <a class="btn" href="./myapp.apk" download="myapp.apk">
+          ⬇ دانلود فایل APK
+        </a>
+
+        <p>فرمت فایل: APK | مخصوص اندروید</p>
+      </div>
+    </section>
+
     <section class="contact" id="contact">
       <div class="container">
-        <h2 class="section-title">ارتباط با من</h2>
-        <p class="section-intro">
-          پروژه‌ها و فعالیت‌های من را در GitHub ببینید.
-        </p>
-
-        <a
-          class="button"
-          href="https://github.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          مشاهده GitHub
-        </a>
+        <h2 class="section-title">تماس با <span>ما</span></h2>
+        <p>برای ارتباط، اطلاعات تماس خود را اینجا قرار دهید.</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      ساخته‌شده با علاقه ❤️
-    </div>
+  <footer class="footer">
+    © تمامی حقوق محفوظ است.
   </footer>
+
 </body>
 </html>
