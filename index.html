@@ -1,4 +1,223 @@
-<header class="navbar">
+[10/13/2026 8:52 PM] My Log: <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#292524">
+  <title>وب‌سایت من</title>
+
+  <style>
+    :root {
+      --orange: #ea580c;
+      --orange-light: #fed7aa;
+      --cream: #fff7ed;
+      --dark: #292524;
+      --white: #ffffff;
+      --muted: #78716c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.9;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .navbar {
+      background: var(--dark);
+      color: var(--white);
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 3px solid var(--orange);
+    }
+
+    .logo {
+      color: #fb923c;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .navbar nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .navbar nav a {
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    .navbar nav a:hover {
+      color: #fb923c;
+    }
+
+    .hero {
+      background: var(--dark);
+      color: var(--white);
+      padding: 85px 20px;
+      text-align: center;
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      margin: 0 0 15px;
+    }
+
+    .hero h1 span {
+      color: #fb923c;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: var(--orange-light);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background .2s, transform .2s;
+    }
+
+    .btn:hover {
+      background: #c2410c;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      width: min(1050px, 90%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 55px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 29px;
+      margin: 0 0 10px;
+    }
+
+    .section-title span {
+      color: var(--orange);
+    }
+
+    .section-description {
+      text-align: center;
+      color: var(--muted);
+      margin: 0 auto 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #fed7aa;
+      border-top: 4px solid var(--orange);
+      box-shadow: 0 6px 20px rgba(41, 37, 36, .06);
+      transition: transform .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--orange);
+    }
+
+    .download-section {
+      background: #ffedd5;
+      padding: 45px 20px;
+      text-align: center;
+      border-top: 1px solid #fed7aa;
+      border-bottom: 1px solid #fed7aa;
+    }
+
+    .download-box {
+      background: var(--white);
+      max-width: 650px;
+      margin: auto;
+      padding: 30px 20px;
+      border-radius: 18px;
+      border: 2px solid var(--orange);
+      box-shadow: 0 8px 25px rgba(41, 37, 36, .08);
+    }
+
+    .download-box h2 {
+      color: var(--dark);
+      margin-top: 0;
+    }
+
+    .download-box p {
+      color: var(--muted);
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--white);
+      padding: 45px 20px;
+    }
+
+    .footer {
+      background: var(--dark);
+      color: var(--orange-light);
+      text-align: center;
+      padding: 22px;
+      border-top: 3px solid var(--orange);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .navbar nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 60px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+[10/13/2026 8:52 PM] My Log: <header class="navbar">
     <a href="#" class="logo">وب‌سایت من</a>
 
     <nav>
