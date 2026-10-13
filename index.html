@@ -1,4 +1,29 @@
-<div class="links">
+.links {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a class="logo" href="#home">وب‌سایت من</a>
+
+      <div class="links">
         <a href="#home">خانه</a>
         <a href="#about">درباره من</a>
         <a href="#projects">پروژه‌ها</a>
@@ -9,17 +34,17 @@
 
   <header class="hero" id="home">
     <div class="container">
-      <span class="tag">اولین پروژه من با GitHub Pages</span>
+      <span class="tag">خوش آمدید به وب‌سایت من</span>
 
-      <h1>به دنیای من خوش آمدید</h1>
+      <h1>ایده‌ها را به واقعیت تبدیل کنیم!</h1>
 
       <p>
-        اینجا جایی برای معرفی من، نمایش پروژه‌ها
-        و به اشتراک گذاشتن چیزهایی است که یاد می‌گیرم.
+        اینجا فضای من برای یادگیری، معرفی پروژه‌ها
+        و ساختن تجربه‌های تازه در دنیای فناوری است.
       </p>
 
       <a class="button" href="#projects">مشاهده پروژه‌ها</a>
-      <a class="button button-outline" href="#about">بیشتر بدانید</a>
+      <a class="button button-outline" href="#about">درباره من</a>
     </div>
   </header>
 
@@ -27,13 +52,13 @@
     <section id="about">
       <div class="container">
         <h2 class="section-title">درباره من</h2>
-        <p class="section-intro">کمی درباره این وب‌سایت</p>
+        <p class="section-intro">به فضای شخصی من خوش آمدید</p>
 
         <p class="about">
-          من در حال یادگیری طراحی وب هستم. این وب‌سایت را با
-          HTML و CSS ساخته‌ام و از GitHub Pages برای انتشار
-          رایگان آن استفاده می‌کنم. در آینده پروژه‌های بیشتری
-          به این صفحه اضافه خواهم کرد.
+          من در حال یادگیری طراحی وب و برنامه‌نویسی هستم.
+          این سایت را با HTML و CSS ساخته‌ام و از GitHub
+          Pages برای انتشار آن استفاده می‌کنم. هدفم این است
+          که با تمرین، پروژه‌های بهتر و کاربردی‌تری بسازم.
         </p>
       </div>
     </section>
@@ -42,7 +67,7 @@
       <div class="container">
         <h2 class="section-title">پروژه‌های من</h2>
         <p class="section-intro">
-          نمونه‌ای از کارهایی که می‌توانم در این بخش معرفی کنم
+          گوشه‌ای از مسیر یادگیری و کارهای من
         </p>
 
         <div class="cards">
@@ -50,23 +75,26 @@
             <div class="card-icon">🌐</div>
             <h3>طراحی وب‌سایت</h3>
             <p>
-              ساخت صفحات زیبا و واکنش‌گرا با HTML و CSS.
+              ساخت صفحات جذاب، مرتب و سازگار با موبایل
+              و کامپیوتر با HTML و CSS.
             </p>
           </article>
 
           <article class="card">
             <div class="card-icon">💻</div>
-            <h3>یادگیری برنامه‌نویسی</h3>
+            <h3>برنامه‌نویسی</h3>
             <p>
-              تمرین کدنویسی و نگهداری پروژه‌ها در GitHub.
+              یادگیری کدنویسی و مدیریت پروژه‌ها
+              با ابزارهای توسعه.
             </p>
           </article>
 
           <article class="card">
             <div class="card-icon">🚀</div>
-            <h3>پروژه‌های آینده</h3>
+            <h3>ایده‌های آینده</h3>
             <p>
-              این بخش را با پروژه‌های واقعی خودم تکمیل می‌کنم.
+              افزودن پروژه‌های واقعی و امکانات تازه
+              به این وب‌سایت در آینده.
             </p>
           </article>
         </div>
@@ -77,8 +105,9 @@
       <div class="container">
         <h2 class="section-title">ارتباط با من</h2>
         <p class="section-intro">
-          می‌توانی از طریق صفحه GitHub من را پیدا کنی.
+          پروژه‌ها و فعالیت‌های من را در GitHub ببینید.
         </p>
+
         <a
           class="button"
           href="https://github.com/"
